@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Tuo nome..." />
+
+        <br /><br />
+
+        <label>Cognome</label>
+        <input type="text" placeholder="Tuo cognome..." required="required" />
+
+        <br /><br />
+
+        <label>Password</label>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number" />
+
+        <br /><br />
+
+        <label>Sesso</label>
+        <select>
+            <option value=""></option>
+            <option value="1">M</option>
+            <option value="2">F</option>
+            <option value="3">Non dichiarato</option>
+        </select>
+
+        <br /><br />
+
+        <!--dando nuovi name posso selezionare più di una voce-->
+        <label>Colore preferito</label>
+        <label><input type="radio" name="Colore preferito" value="1" />Rosso</label>
+        <label><input type="radio" name="Colore preferito" value="2" />Blu</label>
+        <label><input type="radio" name="Colore preferito" value="3" />Verde</label>
+
+        <br /><br />
+
+        <label>Skills</label>
+        <label><input type="checkbox" value="1" name="c#" />C#</label>
+        <label><input type="checkbox" value="2" name="sql" />SQL</label>
+        <label><input type="checkbox" value="3" name="html5" />HTML5</label>
+
+
+        <br /><br />
+        <input type="submit" value="Invia" />
+
+    </form>
+
+</body>
+</html>
