@@ -1,9 +1,111 @@
 ﻿body {
-    background-color:rgb(169 210 217)
+    background-color:rgb(250 240 223)
 }
 
-h1 {
-    color:red
+header{
+    background-color:white;
+    color:cadetblue;
+    border: 3px solid cadetblue;
+        
 }
 
+#logo {
+    float:left;
+    width:70px;
+}
+
+#imghotel {
+    width:100%
+}
+
+nav {
+    clear:left;
+    background-color:cadetblue;
+    padding:10px;
+    
+    
+}
+
+#imgpresentazione {
+    height:200px;
+    width:300px;
+    float:left;
+}
+
+article{
+    padding-bottom:50px;
+}
+footer {
+    clear:left;
+    margin-top:100px;
+    padding:10px;
+    background-color:cadetblue;
+}
+
+
+#linkprenot {
+    border: 2px solid cadetblue;
+    text-decoration-line:none;
+    padding:3px;
+}
+
+#linkprenot:hover {
+    background-color: white;
+    cursor:pointer;
+}
+
+
+#invioprenot {
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+tr:nth-child(odd){
+    background-color:white;
+
+}
+
+tr:hover {
+    background-color: #ceebeb;
+}
+
+#guestbook {
+/*    float:right;
+*/    height:250px;
+}
+
+ form {
+    float:left;
+    padding:30px 100px 10px 30px;
+}
+
+nav a{
+    color:white;
+}
+nav a:visited {
+    color: #ceebeb;
+}
+nav a:hover{
+    color:black;
+}
+footer a{
+    color:white;
+}
+footer a:visited {
+    color: #ceebeb;
+}
+footer a:hover {
+    color: black;
+}
+
+
+label {
+    float:left;
+    width: 160px;
+}
+
+input{
+    float:left;
+}
 
