@@ -3,24 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ES1_sitoHotel", ".", "{7AB711D1-427F-423F-B4A6-1B1F8DE3D8AD}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ES1_sitoHotel", "..\ES1_sitoHotel\", "{7AB711D1-427F-423F-B4A6-1B1F8DE3D8AD}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_49281"
-		Debug.AspNetCompiler.PhysicalPath = "F:\Laura\Documenti\Avanade\Academy\Week4\ES1_sitoHotel\"
+		Debug.AspNetCompiler.PhysicalPath = "..\ES1_sitoHotel\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49281\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_49281"
-		Release.AspNetCompiler.PhysicalPath = "F:\Laura\Documenti\Avanade\Academy\Week4\ES1_sitoHotel\"
+		Release.AspNetCompiler.PhysicalPath = "..\ES1_sitoHotel\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49281\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "49281"
+		SlnRelativePath = "..\ES1_sitoHotel\"
 	EndProjectSection
 EndProject
 Global
@@ -35,6 +36,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7E75E6B1-64D2-49B2-B18A-AA9437D8527E}
+		SolutionGuid = {E5BE3FA2-086A-4BC3-AD1B-EFECBAA7562E}
 	EndGlobalSection
 EndGlobal
