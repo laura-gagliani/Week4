@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <title>Homepage</title>
     <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
 </head>
-<body>
+<body onload="closeForm()">
 
     <header>
         <img id="logo" src="lake-logo (2).jpg" />
@@ -22,12 +23,14 @@
         <a href="Homepage.html">Homepage</a>
         <a href="Camere.html">Camere</a>
         <a href="Contatti.html">Contatti</a>
+        <button onclick="openForm()">Login</button>
     </nav>
 
     <br /><br />
 
 
     <main>
+
         <img id="imghotel" src="hotel.jpg" />
         <br />
         <article>
@@ -48,5 +51,24 @@
             | <a href="">Twitter</a>
         </p>
     </footer>
+
+    <form class="popupForm" id="loginPopup" style="border:3px solid white" >
+        <h2>Login Utente</h2>
+
+
+        <label>Username</label>
+        <input type="text" required="required" />
+
+        <br /><br />
+
+        <label>Password</label>
+        <input type="password" required="required" />
+
+        <br /><br />
+
+        <button type="submit">Accedi</button>
+    </form>
+
+
 </body>
 </html>

@@ -15,8 +15,9 @@ function changeToLogin() {
             loginButton.disabled = true                 //il tasto login resta disabled
             return
         }
-        loginButton.disabled = false
-        }
+    }
+    loginButton.disabled = false
+
 }
 
 function saveData() {
