@@ -3,17 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <script src="login.js"></script>
 </head>
-<body>
+<body onload="checkLogin()">
 
 
-    <form>
+    <form onsubmit="saveData(); hideForm();">
         <label>Username</label>
-        <input type="text" required />
+        <input class="logininput" type="text" onchange="changeToLogin()" required />
+        <br />
         <label>Password</label>
-        <input type="password" required />
-
-        <input type="submit" value="LOGIN" disabled/>
+        <input class="logininput" type="password" onchange="changeToLogin()" required />
+        <br />
+        <input type="submit" value="LOGIN" disabled />
     </form>
+
+    <!-- al click di login dobbiamo far sparire la form -->
+    <!-- posso farlo facendo form onsubmit=funzione()  e fare una specie di funzione di sparizione-->
+
+
+    <button id="logoutButton" type="button" value="LOGOUT" style="display:none" onclick="logout()">LOGOUT</button>
+
+    <!-- manca ora un "clicco il logout, mi fa il logout" -->
+
 </body>
 </html>
