@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--<script>
+        alert("CIAO")
+    </script>-->
+    <script src="JavaScript.js"></script>
+</head>
+<body onload="demoOnLoad()">
+    <!--<script>
+        alert("Buongiorno")
+    </script>-->
+    <!--<script>
+        miaFunzione()
+
+    </script>-->
+
+    <button onclick="demoOnClick()">non mi toccare!!!</button>
+
+    <div>
+        <p id="saluto" style="background-color:aqua" onmouseover="this.style.backgroundColor = 'green'" onmouseout="this.style.backgroundColor='pink'">
+            Ciao come stai?
+        </p>
+    </div>
+
+    <input type="text" onkeydown="demoOnKeyDown()" />
+
+    <select id="role" onchange="demoOnChange()">
+        <option value="">seleziona un ruolo</option>
+        <option value="WIZARD">wizard</option>
+        <option value="DRUID">druid</option>
+        <option value="FIGHTER">fighter</option>
+            </select>
+
+    <label>
+        <input class="checkBox" type="checkbox" onchange="checkSelection()" />
+    </label>
+
+</body>
+</html>
