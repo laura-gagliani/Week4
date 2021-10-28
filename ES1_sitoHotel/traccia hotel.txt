@@ -1,0 +1,31 @@
+nuove aggiunte hotel:
+
+media queries
+-barra di navigazione verticale
+-far scomparire immagine accanto alla prenotazione
+
+javascript
+-al caricamento della home: popup di benvenuto
+(benvenuto ciccio se già loggato)
+SOLTANTO NELLA HOME
+
+INVECE accedibile tramite tutte le pagine:
+-in basso pulsante ACCEDI che al click fa comparire un pop-up (o un'altra pagina..) 
+	-------------------------------------
+	|		username	     |
+	|		password	     |
+	|	LOGIN 		 CHIUDI      |
+	-------------------------------------
+ quando clicco "chiudi" la form sparisce e posso premere nuovamente ACCEDI
+
+quando dico LOGIN i dati sono salvati sul local storage
+		  la form si chiude
+		  il tasto accedi è disabilitato
+
+
+optional:
+....
+
+--si può mandare la prenotazione solo quando l'utente è loggato
+
+--in base a quale prenota clicca "portarsi dietro" il nome della stanza nella pagina di prenotazione

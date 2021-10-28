@@ -1,0 +1,30 @@
+﻿body {
+}
+
+#navbar-logo {
+    width:90px;
+
+}
+
+/*.navbar {
+    background-color:white;
+    border:6px solid rgb(163 168 230);
+}*/
+
+.img-colonne {
+    width:90%;
+    align-self:center;
+}
+
+#storia {
+    text-align: justify;
+    width: 90%;
+}
+
+form {
+    
+}
+
+.table {
+    width:70%;
+}

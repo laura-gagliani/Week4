@@ -6,7 +6,8 @@
     <link href="StyleSheet.css" rel="stylesheet" />
     <script src="JavaScript.js"></script>
 </head>
-<body onload="closeForm()">
+
+<body onload="welcome(); closeForm(); checkLogin();">
 
     <header>
         <img id="logo" src="lake-logo (2).jpg" />
@@ -20,11 +21,25 @@
 
 
     <nav>
+
         <a href="Homepage.html">Homepage</a>
         <a href="Camere.html">Camere</a>
         <a href="Contatti.html">Contatti</a>
-        <button onclick="openForm()">Login</button>
+        <button class="logbuttons" id="loginButton" onclick="openForm()">Login</button>
+        <button class="logbuttons" id="logoutButton" onclick="logout()" >Logout</button>
+
     </nav>
+    <!--<nav>
+        <ul>
+            <li><a href="Homepage.html">Homepage</a></li>
+            <li><a href="Camere.html">Camere</a></li>
+            <li><a href="Contatti.html">Contatti</a></li>
+            <li><button id="loginButton" onclick="openForm()">Login</button></li>                       
+            <li><button id="logoutButton" onclick="logout()" style="display:none">Logout</button></li>
+
+        </ul>
+        
+    </nav>-->
 
     <br /><br />
 
@@ -40,6 +55,21 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec. </p>
         </article>
 
+        <form id="loginPopup">
+            <h2>Login Utente</h2>
+            <label>Username</label>
+            <input type="text" class="logininput" />
+            <br /><br />
+            <label>Password</label>
+            <input type="password" class="logininput" />
+
+            <br /><br /><br />
+
+            <button onclick="saveData(); hideLoginButton()">Accedi</button>
+            <button onclick="close()">Chiudi</button>
+
+        </form>
+
     </main>
 
 
@@ -52,22 +82,7 @@
         </p>
     </footer>
 
-    <form class="popupForm" id="loginPopup" style="border:3px solid white" >
-        <h2>Login Utente</h2>
 
-
-        <label>Username</label>
-        <input type="text" required="required" />
-
-        <br /><br />
-
-        <label>Password</label>
-        <input type="password" required="required" />
-
-        <br /><br />
-
-        <button type="submit">Accedi</button>
-    </form>
 
 
 </body>

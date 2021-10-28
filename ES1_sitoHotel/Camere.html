@@ -4,8 +4,9 @@
     <meta charset="utf-8" />
     <title>Le nostre camere</title>
     <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
 </head>
-<body>
+<body onload="closeForm(); checkLogin();" >
     <header>
         <img id="logo" src="lake-logo (2).jpg" />
         <h1>      Hotel Al lago blu</h1>
@@ -14,9 +15,13 @@
 
 
     <nav>
+
         <a href="Homepage.html">Homepage</a>
         <a href="Camere.html">Camere</a>
         <a href="Contatti.html">Contatti</a>
+        <button class="logbuttons" id="loginButton" onclick="openForm()">Login</button>
+        <button class="logbuttons" id="logoutButton" onclick="logout()">Logout</button>
+
     </nav>
 
     <br />
@@ -35,26 +40,41 @@
             <tbody>
                 <tr>
                     <td>Camera blu<br />2 posti letto (un matrimoniale)</td>
-                    <td><img src="https://i.pinimg.com/originals/c4/d3/ba/c4d3bad3d6a80ad1827bbd11bce0c11e.jpg" width="400" /></td>
+                    <td><img class="imgcamere" src="https://i.pinimg.com/originals/c4/d3/ba/c4d3bad3d6a80ad1827bbd11bce0c11e.jpg" width="400" /></td>
                     <td>60 euro/notte</td>
-                    <td><a id="linkprenot" href="Prenota.html">Prenota</a></td>
+                    <td><button class="linkprenot" id="camerablu" onclick="checkLoginReservation()" >Prenota</button></td>
                 </tr>
                 <tr>
                     <td>Camera verde<br />3 posti letto (un matrimoniale, un singolo)</td>
-                    <td><img src="https://q-xx.bstatic.com/images/hotel/max1024x768/297/297776607.jpg" width="400" /></td>
+                    <td><img class="imgcamere" src="https://q-xx.bstatic.com/images/hotel/max1024x768/297/297776607.jpg" width="400" /></td>
                     <td>75 euro/notte</td>
-                    <td><a id="linkprenot" href="Prenota.html">Prenota</a></td>
+                    <td><a class="linkprenot" id="linkprenot" href="Prenota.html">Prenota</a></td>
 
                 </tr>
                 <tr>
                     <td>Camera gialla<br />1 posto letto (un singolo)</td>
-                    <td><img src="https://www.alpenhofosttirol.com/clientfiles/rooms/20190823170204_19-h-alpenhof-singola-fs19mit--6-.jpg" width="400" /></td>
+                    <td><img class="imgcamere" src="https://www.alpenhofosttirol.com/clientfiles/rooms/20190823170204_19-h-alpenhof-singola-fs19mit--6-.jpg" width="400" /></td>
                     <td>50 euro/notte</td>
-                    <td><a id="linkprenot" href="Prenota.html">Prenota</a></td>
+                    <td><a class="linkprenot" id="linkprenot" href="Prenota.html">Prenota</a></td>
 
                 </tr>
             </tbody>
         </table>
+
+        <form id="loginPopup">
+            <h2>Login Utente</h2>
+            <label>Username</label>
+            <input type="text" class="logininput" />
+            <br /><br />
+            <label>Password</label>
+            <input type="password" class="logininput" />
+
+            <br /><br /><br />
+
+            <button onclick="saveData(); hideLoginButton()">Accedi</button>
+            <button onclick="close()">Chiudi</button>
+
+        </form>
 
     </main>
 
